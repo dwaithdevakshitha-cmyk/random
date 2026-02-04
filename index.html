@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day | For Akshitha</title>
+    <meta name="description" content="A special Valentine's request for Akshitha.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div id="app">
+        <div class="background-overlay"></div>
+        <div class="container">
+            <div id="card" class="glass-card fade-in">
+                <div class="heart-container">
+                    <svg class="main-heart" viewBox="0 0 32 32">
+                        <path
+                            d="M16 28.5L14.1 26.8C7.3 20.6 3 16.7 3 12.2C3 8.5 5.9 5.5 9.5 5.5C11.5 5.5 13.5 6.5 14.8 8.1C16.1 6.5 18.1 5.5 20.1 5.5C23.7 5.5 26.6 8.5 26.6 12.2C26.6 16.7 22.3 20.6 15.6 26.8L16 28.5Z"
+                            fill="#ff4d6d" />
+                    </svg>
+                </div>
+                <h1 id="question">Will you be Akshitha's Valentine on this Valentine's day?</h1>
+                <div class="button-group">
+                    <button id="yesBtn" class="btn btn-yes">Yes</button>
+                    <button id="noBtn" class="btn btn-no">No</button>
+                </div>
+                <p id="reminder" class="reminder-text hidden">Muskoni yes click chei! 🙄</p>
+            </div>
+
+            <div id="successContent" class="hidden">
+                <div class="glass-card success-card fade-in">
+                    <div class="heart-container animate-bounce">
+                        <svg class="main-heart" viewBox="0 0 32 32">
+                            <path
+                                d="M16 28.5L14.1 26.8C7.3 20.6 3 16.7 3 12.2C3 8.5 5.9 5.5 9.5 5.5C11.5 5.5 13.5 6.5 14.8 8.1C16.1 6.5 18.1 5.5 20.1 5.5C23.7 5.5 26.6 8.5 26.6 12.2C26.6 16.7 22.3 20.6 15.6 26.8L16 28.5Z"
+                                fill="#ff4d6d" />
+                        </svg>
+                    </div>
+                    <h1 class="dancing-script">Yay! ❤️</h1>
+                    <p class="final-message">I love you! ❤️</p>
+                    <p class="venue">Feb 14th, Saturday @ Krishna Dhaba</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('SW Registered'))
+                    .catch(err => console.log('SW Error: ', err));
+            });
+        }
+    </script>
+</body>
+
+</html>

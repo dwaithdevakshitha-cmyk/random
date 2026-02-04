@@ -1,0 +1,15 @@
+{
+    "name": "Valentine for Akshitha",
+    "short_name": "Valentine",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ff4d6d",
+    "theme_color": "#ff4d6d",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
