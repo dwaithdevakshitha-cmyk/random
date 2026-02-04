@@ -21,11 +21,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('bg.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background: url('bg.png') center center / cover no-repeat;
+    background-color: #000;
+    /* Fallback */
 }
 
 .background-overlay {
